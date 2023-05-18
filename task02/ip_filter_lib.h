@@ -29,3 +29,16 @@ struct ip_addrss
     }
 };
 
+std::string splitLine(const std::string &str, char d);
+
+void ptintIpVector(std::vector<std::string> &ipVector);
+
+void printIpVector(std::vector<ip_addrss> &printIpVector);
+
+void sortIp(std::vector<ip_addrss> &ips);
+
+std::unique_ptr<std::vector<ip_addrss>> getIpByMask(std::vector<ip_addrss> &ips,
+                                                  std::vector<int> mask);
+
+std::unique_ptr<std::vector<ip_addrss>> getIpByByte(std::vector<ip_addrss> &ips,
+                                                    uint8_t byte);

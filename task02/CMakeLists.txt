@@ -15,7 +15,9 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(task02
-  ip_filter_lib.h
+    ip_filter_lib.cpp
+    ip_filter_lib.h
+    main.cpp
 )
 target_link_libraries(task02 Qt${QT_VERSION_MAJOR}::Core)
 
